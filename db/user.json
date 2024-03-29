@@ -1,0 +1,75 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin",
+      "phone": "012345678"
+    },
+    {
+      "id": "8451",
+      "username": "a",
+      "password": "a",
+      "phone": "1"
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "name": "abc",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.I7NPZaDCh5JmQOL3QFDKxQHaHa&pid=Api&P=0&h=220",
+      "price": 100,
+      "rating": 4
+    },
+    {
+      "id": 2,
+      "name": "bcd",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.I7NPZaDCh5JmQOL3QFDKxQHaHa&pid=Api&P=0&h=220",
+      "price": 100,
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "name": "bcd",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.I7NPZaDCh5JmQOL3QFDKxQHaHa&pid=Api&P=0&h=220",
+      "price": 100.05,
+      "rating": 4
+    },
+    {
+      "id": 4,
+      "name": "bcd",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.I7NPZaDCh5JmQOL3QFDKxQHaHa&pid=Api&P=0&h=220",
+      "price": 100.05,
+      "rating": 4
+    },
+    {
+      "id": 5,
+      "name": "bcd",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.I7NPZaDCh5JmQOL3QFDKxQHaHa&pid=Api&P=0&h=220",
+      "price": 100.05,
+      "rating": 4
+    },
+    {
+      "id": 6,
+      "name": "bcd",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.I7NPZaDCh5JmQOL3QFDKxQHaHa&pid=Api&P=0&h=220",
+      "price": 100.05,
+      "rating": 4
+    },
+    {
+      "id": 7,
+      "name": "bcd",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.I7NPZaDCh5JmQOL3QFDKxQHaHa&pid=Api&P=0&h=220",
+      "price": 100.05,
+      "rating": 4
+    },
+    {
+      "id": 8,
+      "name": "bcd",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.I7NPZaDCh5JmQOL3QFDKxQHaHa&pid=Api&P=0&h=220",
+      "price": 100.05,
+      "rating": 4
+    }
+  ],
+  "cart": []
+}

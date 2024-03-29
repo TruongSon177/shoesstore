@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Shop Homepage - Start Bootstrap Template</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+    .offcanvas-body {
+    max-height: none; /* Cho phép cuộn vô hạn */
+    overflow-y: auto; /* Hiển thị thanh cuộn dọc khi cần thiết */
+    overflow-x: hidden; /* Ẩn thanh cuộn ngang */
+    scrollbar-width: thin; /* Thiết lập chiều rộng của thanh cuộn */
+    scrollbar-color: #888 #f8f9fa; /* Màu của thanh cuộn */
+}
+
+.offcanvas-body::-webkit-scrollbar {
+    width: 8px; /* Chiều rộng của thanh cuộn trong Chrome/Safari */
+}
+
+.offcanvas-body::-webkit-scrollbar-track {
+    background: #f8f9fa; 
+}
+
+.offcanvas-body::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px; 
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- offcanvaCart -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Cart</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div id="cart-total" class="offcanvas-body"></div>
+        <div class="text-center mt-5">
+            <button class="btn btn-primary">Thanh toán</button>
+            <div id="tongTien" class="mt-3">Tổng tiền: $100.00</div>
+        </div>
+    </div>
+    <!-- offcanvaCart -->
+
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <!-- Removed "Start Bootstrap" brand -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#!">All Products</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                            <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <!-- Added "Login" and "Signup" buttons -->
+                    <button id="login1" style="width: 75px;" class="btn btn-outline-dark me-2" type="button"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal" type="submit">Login</button>
+                    <button id="signup1" data-bs-toggle="modal" data-bs-target="#exampleModal2"
+                        class="btn btn-outline-dark mx-3" type="submit">Signup</button>
+
+
+                    <!-- Modal login -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="card">
+                                        <div class="card-body row">
+                                            <form id="loginSubmit">
+                                                <div class="col-12">
+                                                    <label class="m-2" for="username">Username</label>
+                                                    <input id="username" type="text" class="form-control">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label class="m-2" for="password">Password</label>
+                                                    <input id="password" type="password" class="form-control">
+                                                </div>
+                                                <div class="col-12 mt-3">
+                                                    <button id="loginButton" type="button"
+                                                        class="btn btn-primary">Login</button>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal Signup -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel2">Signup</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="card">
+                                        <div class="card-body row">
+                                            <form id="signup">
+                                                <div class="col-12">
+                                                    <label class="m-2" for="">Username</label>
+                                                    <input id="username1" type="text" class="form-control">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label class="m-2" for="">Phone</label>
+                                                    <input id="phone1" type="number" class="form-control">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label class="m-2" for="">Password</label>
+                                                    <input id="password1" type="password" class="form-control">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label class="m-2" for="">ComfirmPassword</label>
+                                                    <input id="ComfirmPassword" type="password" class="form-control">
+                                                </div>
+                                                <div class="col-12 mt-3">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                    <button type="submit" class="btn btn-primary">Signup</button>
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <button style="margin-left: 15px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight" class="btn btn-outline-dark" type="submit">
+                        <i class="bi-cart-fill me-1"></i>
+                        Cart
+                        <span id="slCard" class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="bg-dark py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder">S Shop </h1>
+                <p class="lead fw-normal text-white-50 mb-0">We bring good things to life</p>
+            </div>
+        </div>
+    </header>
+    <!-- Section-->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+
+            <div id="productLoad" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+               
+            </div>
+        </div>
+
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script src="./js/user/register/register.js"></script>
+    <script src="./js/user/login/login.js"></script>
+    <script src="./js/user/product/product.js"></script>
+    <script src="./js/user/cart/cart.js"></script>
+    <script src="./js/user/cart/addtoCard.js"></script>
+    <script src="./js/user/cart/deleteCard.js"></script>
+</body>
+
+</html>
